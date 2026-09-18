@@ -3,754 +3,976 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3M With TONNAMM ❤️</title>
+<title>4M With TONNAMM ❤️</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,600;0,700;1,400&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
-    :root {
-        --blush: #f9dcd6;
-        --blush-deep: #f0b8ac;
-        --peach: #ffe9d6;
-        --cream: #fffaf3;
-        --lavender: #ece0ef;
-        --rose: #d98f8a;
-        --rose-deep: #c17872;
-        --ink: #6b4a42;
-        --ink-soft: #8a655c;
-        --white-card: #ffffff;
-    }
+:root {
+    --blush: #f9dcd6;
+    --blush-deep: #f0b8ac;
+    --peach: #ffe9d6;
+    --cream: #fffaf3;
+    --lavender: #ece0ef;
+    --rose: #d98f8a;
+    --rose-deep: #c17872;
+    --ink: #6b4a42;
+    --ink-soft: #8a655c;
+    --white-card: #ffffff;
+}
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    body {
-        font-family: 'Sarabun', 'Mali', sans-serif;
-        background:
-            radial-gradient(ellipse 70% 45% at 20% 5%, rgba(236, 224, 239, 0.55), transparent 60%),
-            radial-gradient(ellipse 70% 45% at 85% 20%, rgba(255, 233, 214, 0.6), transparent 60%),
-            radial-gradient(ellipse 80% 60% at 50% 90%, rgba(249, 220, 214, 0.5), transparent 60%),
-            linear-gradient(180deg, #fffaf3 0%, #fdf3ec 40%, #fbeee6 100%);
-        background-attachment: fixed;
-        color: var(--ink);
-        overflow-x: hidden;
-        position: relative;
-    }
+body {
+    font-family: 'Sarabun', 'Mali', sans-serif;
+    background:
+        radial-gradient(ellipse 70% 45% at 20% 5%, rgba(236, 224, 239, 0.55), transparent 60%),
+        radial-gradient(ellipse 70% 45% at 85% 20%, rgba(255, 233, 214, 0.6), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 50% 90%, rgba(249, 220, 214, 0.5), transparent 60%),
+        linear-gradient(180deg, #fffaf3 0%, #fdf3ec 40%, #fbeee6 100%);
+    background-attachment: fixed;
+    color: var(--ink);
+    overflow-x: hidden;
+    position: relative;
+}
 
-    /* ===== LOCK SCREEN ===== */
-    #lock-screen {
-        position: fixed;
-        inset: 0;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px;
-        background:
-            radial-gradient(ellipse 70% 45% at 20% 5%, rgba(236, 224, 239, 0.55), transparent 60%),
-            radial-gradient(ellipse 70% 45% at 85% 20%, rgba(255, 233, 214, 0.6), transparent 60%),
-            linear-gradient(180deg, #fffaf3 0%, #fdf3ec 40%, #fbeee6 100%);
-        transition: opacity .6s ease, visibility .6s ease;
-    }
+/* ===== LOCK SCREEN ===== */
+#lock-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background:
+        radial-gradient(ellipse 70% 45% at 20% 5%, rgba(236, 224, 239, 0.55), transparent 60%),
+        radial-gradient(ellipse 70% 45% at 85% 20%, rgba(255, 233, 214, 0.6), transparent 60%),
+        linear-gradient(180deg, #fffaf3 0%, #fdf3ec 40%, #fbeee6 100%);
+    transition: opacity .6s ease, visibility .6s ease;
+}
 
-    #lock-screen.hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
+#lock-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
-    .lock-card {
-        background: #fff;
-        border-radius: 28px;
-        padding: 44px 34px;
-        max-width: 380px;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 24px 60px rgba(217,143,138,.25);
-        border: 1px solid rgba(249,220,214,.8);
-        animation: fadeUp .8s ease both;
-    }
+.lock-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 44px 34px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 24px 60px rgba(217,143,138,.25);
+    border: 1px solid rgba(249,220,214,.8);
+    animation: fadeUp .8s ease both;
+}
 
-    .lock-card .lock-icon {
-        font-size: 32px;
-        color: var(--rose);
-        margin-bottom: 14px;
-    }
+.lock-card .lock-icon {
+    font-size: 32px;
+    color: var(--rose);
+    margin-bottom: 14px;
+}
 
-    .lock-card h3 {
-        font-family: 'Mali', sans-serif;
-        font-weight: 700;
-        font-size: 22px;
-        color: var(--rose-deep);
-        margin-bottom: 8px;
-    }
+.lock-card h3 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--rose-deep);
+    margin-bottom: 8px;
+}
 
-    .lock-card p.hint {
-        font-size: 14px;
-        color: var(--ink-soft);
-        margin-bottom: 26px;
-        line-height: 1.6;
-    }
+.lock-card p.hint {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 26px;
+    line-height: 1.6;
+}
 
-    .date-inputs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        margin-bottom: 22px;
-    }
+.date-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+}
 
-    .date-inputs input {
-        font-family: 'Mali', sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        text-align: center;
-        color: var(--rose-deep);
-        background: var(--cream);
-        border: 2px solid var(--blush);
-        border-radius: 14px;
-        padding: 12px 0;
-        transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
-        outline: none;
-        -moz-appearance: textfield;
-    }
+.date-inputs input {
+    font-family: 'Mali', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--rose-deep);
+    background: var(--cream);
+    border: 2px solid var(--blush);
+    border-radius: 14px;
+    padding: 12px 0;
+    transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+    outline: none;
+    -moz-appearance: textfield;
+}
 
-    .date-inputs input::-webkit-outer-spin-button,
-    .date-inputs input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+.date-inputs input::-webkit-outer-spin-button,
+.date-inputs input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-    .date-inputs input#field-day,
-    .date-inputs input#field-month {
-        width: 56px;
-    }
+.date-inputs input#field-day,
+.date-inputs input#field-month {
+    width: 56px;
+}
 
-    .date-inputs input#field-year {
-        width: 70px;
-    }
+.date-inputs input#field-year {
+    width: 70px;
+}
 
-    .date-inputs input:focus {
-        border-color: var(--rose);
-        box-shadow: 0 0 0 4px rgba(217,143,138,.15);
-        transform: translateY(-1px);
-    }
+.date-inputs input:focus {
+    border-color: var(--rose);
+    box-shadow: 0 0 0 4px rgba(217,143,138,.15);
+    transform: translateY(-1px);
+}
 
-    .date-inputs .sep {
-        font-family: 'Mali', sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        color: var(--blush-deep);
-    }
+.date-inputs .sep {
+    font-family: 'Mali', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blush-deep);
+}
 
-    .lock-card .unlock-btn {
-        width: 100%;
-        border: none;
-        padding: 15px;
-        border-radius: 30px;
-        background: linear-gradient(135deg, var(--blush-deep), var(--rose));
-        color: #fff;
-        font-family: 'Mali', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        cursor: pointer;
-        letter-spacing: .3px;
-        transition: transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease;
-        box-shadow: 0 12px 26px rgba(217,143,138,.3);
-    }
+.lock-card .unlock-btn {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--blush-deep), var(--rose));
+    color: #fff;
+    font-family: 'Mali', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .3px;
+    transition: transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease;
+    box-shadow: 0 12px 26px rgba(217,143,138,.3);
+}
 
-    .lock-card .unlock-btn:hover {
-        transform: scale(1.03) translateY(-1px);
-        box-shadow: 0 16px 32px rgba(217,143,138,.4);
-    }
+.lock-card .unlock-btn:hover {
+    transform: scale(1.03) translateY(-1px);
+    box-shadow: 0 16px 32px rgba(217,143,138,.4);
+}
 
-    .lock-card .error-msg {
-        margin-top: 16px;
-        font-size: 13.5px;
-        color: var(--rose-deep);
-        opacity: 0;
-        min-height: 18px;
-        transition: opacity .3s ease;
-    }
+.lock-card .error-msg {
+    margin-top: 16px;
+    font-size: 13.5px;
+    color: var(--rose-deep);
+    opacity: 0;
+    min-height: 18px;
+    transition: opacity .3s ease;
+}
 
-    .lock-card .error-msg.show {
-        opacity: 1;
-    }
+.lock-card .error-msg.show {
+    opacity: 1;
+}
 
-    @keyframes shake {
-        10%, 90% { transform: translateX(-2px); }
-        20%, 80% { transform: translateX(4px); }
-        30%, 50%, 70% { transform: translateX(-7px); }
-        40%, 60% { transform: translateX(7px); }
-    }
+@keyframes shake {
+    10%, 90% { transform: translateX(-2px); }
+    20%, 80% { transform: translateX(4px); }
+    30%, 50%, 70% { transform: translateX(-7px); }
+    40%, 60% { transform: translateX(7px); }
+}
 
-    .date-inputs.shake {
-        animation: shake .5s ease;
-    }
+.date-inputs.shake {
+    animation: shake .5s ease;
+}
 
-    #site-content {
-        transition: opacity .7s ease;
-    }
+#site-content {
+    transition: opacity .7s ease;
+}
 
-    #site-content.hidden-content {
-        opacity: 0;
-        pointer-events: none;
-        height: 0;
-        overflow: hidden;
-    }
+#site-content.hidden-content {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+}
 
-    /* ===== soft floating clouds / bokeh ===== */
-    .ambient {
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: 0;
-        overflow: hidden;
-    }
+/* ===== soft floating clouds / bokeh ===== */
+.ambient {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
 
-    .ambient span.heart {
-        position: absolute;
-        bottom: -40px;
-        opacity: 0;
-        color: var(--blush-deep);
-        animation: drift linear infinite;
-    }
+.ambient span.heart {
+    position: absolute;
+    bottom: -40px;
+    opacity: 0;
+    color: var(--blush-deep);
+    animation: drift linear infinite;
+}
 
-    .ambient span.bokeh {
-        position: absolute;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(255,255,255,.8), transparent 70%);
-        opacity: 0;
-        filter: blur(1px);
-        animation: floatSoft ease-in-out infinite;
-    }
+.ambient span.bokeh {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,.8), transparent 70%);
+    opacity: 0;
+    filter: blur(1px);
+    animation: floatSoft ease-in-out infinite;
+}
 
-    @keyframes drift {
-        0% { opacity: 0; transform: translateY(0) translateX(0) scale(0.7) rotate(0deg); }
-        10% { opacity: .45; }
-        88% { opacity: .3; }
-        100% { opacity: 0; transform: translateY(-100vh) translateX(18px) scale(1.05) rotate(15deg); }
-    }
+@keyframes drift {
+    0% { opacity: 0; transform: translateY(0) translateX(0) scale(0.7) rotate(0deg); }
+    10% { opacity: .45; }
+    88% { opacity: .3; }
+    100% { opacity: 0; transform: translateY(-100vh) translateX(18px) scale(1.05) rotate(15deg); }
+}
 
-    @keyframes floatSoft {
-        0%, 100% { opacity: .35; transform: translateY(0) scale(1); }
-        50% { opacity: .6; transform: translateY(-18px) scale(1.08); }
-    }
+@keyframes floatSoft {
+    0%, 100% { opacity: .35; transform: translateY(0) scale(1); }
+    50% { opacity: .6; transform: translateY(-18px) scale(1.08); }
+}
 
-    section, header, footer {
-        position: relative;
-        z-index: 1;
-    }
+section, header, footer {
+    position: relative;
+    z-index: 1;
+}
 
-    /* ===== กระดาษด้านบน ===== */
-    .paper-top {
-        height: 90px;
-        background: linear-gradient(180deg, #fff, var(--blush));
-        clip-path: polygon(
-            0 0, 100% 0,
-            100% 72%,
-            95% 67%, 90% 75%,
-            83% 65%, 76% 72%,
-            68% 63%, 60% 71%,
-            53% 62%, 45% 72%,
-            36% 63%, 28% 72%,
-            19% 62%, 10% 70%,
-            0 62%
-        );
-        box-shadow: 0 4px 25px rgba(217, 143, 138, .18);
-    }
+/* ===== กระดาษด้านบน ===== */
+.paper-top {
+    height: 90px;
+    background: linear-gradient(180deg, #fff, var(--blush));
+    clip-path: polygon(
+        0 0, 100% 0,
+        100% 72%,
+        95% 67%, 90% 75%,
+        83% 65%, 76% 72%,
+        68% 63%, 60% 71%,
+        53% 62%, 45% 72%,
+        36% 63%, 28% 72%,
+        19% 62%, 10% 70%,
+        0 62%
+    );
+    box-shadow: 0 4px 25px rgba(217, 143, 138, .18);
+}
 
-    /* ===== Hero ===== */
-    .hero {
-        text-align: center;
-        padding: 46px 20px 55px;
-    }
+/* ===== Hero ===== */
+.hero {
+    text-align: center;
+    padding: 46px 20px 55px;
+    position: relative;
+}
 
-    .hero .crown {
-        font-size: 26px;
-        margin-bottom: 12px;
-        opacity: 0;
-        color: var(--rose);
-        animation: fadeUp .9s ease both, floatY 4s ease-in-out 1s infinite;
-    }
+.hero .crown {
+    font-size: 26px;
+    margin-bottom: 12px;
+    opacity: 0;
+    color: var(--rose);
+    animation: fadeUp .9s ease both, floatY 4s ease-in-out 1s infinite;
+}
 
-    .hero .eyebrow {
-        display: inline-block;
-        font-family: 'Mali', sans-serif;
-        font-weight: 600;
-        letter-spacing: 4px;
-        font-size: 13px;
-        text-transform: uppercase;
-        color: var(--rose-deep);
-        opacity: 0;
-        margin-bottom: 16px;
-        animation: fadeUp .9s .1s ease both;
-    }
+.hero .eyebrow {
+    display: inline-block;
+    font-family: 'Mali', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    opacity: 0;
+    margin-bottom: 16px;
+    animation: fadeUp .9s .1s ease both;
+}
 
-    .hero .eyebrow::before,
-    .hero .eyebrow::after {
-        content: '♡';
-        margin: 0 10px;
-        color: var(--blush-deep);
+.hero .eyebrow::before,
+.hero .eyebrow::after {
+    content: '♡';
+    margin: 0 10px;
+    color: var(--blush-deep);
+}
+
+.hero h1 {
+    font-family: 'Mali', cursive, sans-serif;
+    font-size: clamp(65px, 17vw, 120px);
+    font-weight: 700;
+    color: var(--white-card);
+    -webkit-text-stroke: 10px var(--rose);
+    paint-order: stroke fill;
+    line-height: 0.92;
+    transform: rotate(-3deg);
+    margin-bottom: 26px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeUp 1s .2s ease both;
+    filter: drop-shadow(0 10px 20px rgba(217,143,138,.28));
+}
+
+.hero h2 {
+    font-family: 'Mali', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeUp 1s .3s ease both;
+    color: var(--rose-deep);
+}
+
+.hero .names {
+    font-family: 'Mali', sans-serif;
+    font-size: 15px;
+    opacity: 0;
+    letter-spacing: 1px;
+    color: var(--ink-soft);
+    animation: fadeUp 1s .4s ease both;
+}
+
+.hero .names::before { content: '✿ '; color: var(--blush-deep); }
+.hero .names::after { content: ' ✿'; color: var(--blush-deep); }
+
+.date {
+    opacity: 0;
+    font-size: 14px;
+    margin-top: 6px;
+    color: var(--ink-soft);
+    animation: fadeUp 1s .48s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* ===== ปุ่ม ===== */
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #fff, var(--blush));
+    color: var(--rose-deep);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Mali', sans-serif;
+    letter-spacing: .3px;
+    transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
+    box-shadow: 0 10px 26px rgba(217,143,138,.25);
+    opacity: 0;
+    animation: fadeUp 1s .56s ease both;
+    border: 1px solid rgba(217,143,138,.25);
+}
+
+.button:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 14px 32px rgba(217,143,138,.35);
+}
+
+.button.static {
+    opacity: 1;
+    animation: none;
+    margin-top: 0;
+}
+
+/* ===== รูป ===== */
+.photo-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 24px 30px;
+}
+
+.photo-frame {
+    position: relative;
+    border-radius: 35px;
+}
+
+.photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 42px;
+    background: linear-gradient(135deg, var(--blush-deep), var(--lavender), var(--peach));
+    opacity: .5;
+    filter: blur(14px);
+    z-index: -1;
+}
+
+.main-photo {
+    width: 100%;
+    max-height: 850px;
+    object-fit: cover;
+    border-radius: 35px;
+    border: 12px solid #fff;
+    box-shadow: 0 20px 50px rgba(217,143,138,.3);
+    transform: rotate(1deg);
+    transition: transform .5s ease, box-shadow .5s ease;
+    display: block;
+}
+
+.main-photo:hover {
+    transform: rotate(0deg) scale(1.015);
+    box-shadow: 0 26px 58px rgba(217,143,138,.38);
+}
+
+/* ===== NEW: corner accent photos on hero ===== */
+.corner-photo {
+    position: absolute;
+    width: 92px;
+    border-radius: 10px;
+    border: 6px solid #fff;
+    box-shadow: 0 14px 28px rgba(217,143,138,.28);
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 1s .3s ease both;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.corner-photo.left { top: 6px; left: 5%; transform: rotate(-9deg); }
+.corner-photo.right { top: 22px; right: 5%; transform: rotate(8deg); }
+
+@media (max-width: 600px) {
+    .corner-photo { width: 58px; }
+    .corner-photo.left { left: 3%; top: 0; }
+    .corner-photo.right { right: 3%; top: 10px; }
+}
+
+/* ===== NEW: polaroid + photo mosaic (scattered photo points) ===== */
+.photo-mosaic {
+    max-width: 900px;
+    margin: 6px auto 40px;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px 22px;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 14px 30px rgba(217,143,138,.25);
+    width: 150px;
+    opacity: 0;
+    transform: translateY(20px) rotate(0deg);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.polaroid.in-view { opacity: 1; }
+
+.photo-mosaic .polaroid:nth-child(4n+1).in-view { transform: rotate(-6deg); }
+.photo-mosaic .polaroid:nth-child(4n+2).in-view { transform: rotate(4deg) translateY(10px); }
+.photo-mosaic .polaroid:nth-child(4n+3).in-view { transform: rotate(-3deg) translateY(-6px); }
+.photo-mosaic .polaroid:nth-child(4n+4).in-view { transform: rotate(7deg); }
+
+.polaroid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.polaroid figcaption {
+    font-family: 'Mali', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    letter-spacing: .2px;
+}
+
+@media (max-width: 600px) {
+    .polaroid { width: 44vw; max-width: 160px; }
+}
+
+/* ===== section divider ===== */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 20px;
+    opacity: .8;
+}
+
+.divider .line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--blush-deep), transparent);
+}
+
+.divider .heart {
+    font-size: 15px;
+    color: var(--rose);
+    animation: floatY 3s ease-in-out infinite;
+}
+
+/* ===== Counter ===== */
+.counter-section {
+    padding: 70px 20px 90px;
+    text-align: center;
+}
+
+.counter-section h2 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 6px;
+    color: var(--rose-deep);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.counter-section h2.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.counter-sub {
+    font-family: 'Mali', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+    opacity: .85;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.time-box {
+    min-width: 92px;
+    padding: 20px 12px;
+    background: linear-gradient(160deg, #fff, var(--blush) 120%);
+    color: var(--rose-deep);
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(217,143,138,.22);
+    opacity: 0;
+    transform: translateY(20px) scale(.94);
+    transition: opacity .6s ease, transform .6s ease;
+    border: 1px solid rgba(255,255,255,.6);
+}
+
+.time-box.in-view {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.time-box span {
+    display: block;
+    font-family: 'Mali', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-box small {
+    font-size: 12px;
+    letter-spacing: .4px;
+    opacity: .8;
+}
+
+.counter-note {
+    margin-top: 26px;
+    opacity: .7;
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+
+/* ===== Timeline ===== */
+.timeline {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 25px 90px;
+}
+
+.timeline h2 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 44px;
+    color: var(--rose-deep);
+}
+
+.timeline-track {
+    position: relative;
+    padding-left: 6px;
+}
+
+.timeline-track::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--blush-deep), transparent);
+    opacity: .5;
+}
+
+.event {
+    position: relative;
+    padding: 24px 24px 24px 54px;
+    margin: 20px 0;
+    background: #fff;
+    color: var(--ink);
+    border-radius: 24px;
+    box-shadow: 0 12px 26px rgba(217,143,138,.16);
+    transform: rotate(-1deg) translateY(24px);
+    opacity: 0;
+    transition: opacity .7s ease, transform .7s ease;
+    border: 1px solid rgba(249,220,214,.7);
+    overflow: hidden;
+}
+
+.event.in-view {
+    opacity: 1;
+    transform: rotate(-1deg) translateY(0);
+}
+
+.event:nth-child(even) {
+    transform: rotate(1deg) translateY(24px);
+}
+
+.event:nth-child(even).in-view {
+    transform: rotate(1deg) translateY(0);
+}
+
+.event::before {
+    content: '♡';
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    color: var(--rose);
+    font-size: 18px;
+}
+
+.event h3 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--rose-deep);
+}
+
+.event p {
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
+/* NEW: small photo point inside each timeline event */
+.event .event-photo {
+    float: right;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 0 0 10px 14px;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 18px rgba(217,143,138,.28);
+}
+
+/* ===== continue button block (between timeline and letter) ===== */
+.continue-block {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.continue-block .button {
+    position: static;
+}
+
+#month-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+#month-nav .button {
+    margin-top: 0;
+}
+
+#month-nav .button:disabled {
+    opacity: .35;
+    cursor: default !important;
+    box-shadow: none;
+    transform: none !important;
+}
+
+.event.fading {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* ===== จดหมาย ===== */
+.letter {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px 20px 100px;
+}
+
+.letter-paper {
+    position: relative;
+    background: #fffdfb;
+    color: var(--ink);
+    padding: 50px 34px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(217,143,138,.22);
+    transform: rotate(-1deg);
+    background-image:
+        linear-gradient(#fffdfb 0%, #fffdfb 100%),
+        repeating-linear-gradient(180deg, transparent, transparent 34px, rgba(217,143,138,.06) 35px);
+    border: 1px solid rgba(249,220,214,.8);
+}
+
+.letter-paper::after {
+    content: '✿';
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 18px;
+    color: var(--blush-deep);
+    opacity: .7;
+}
+
+.letter-paper h2 {
+    font-family: 'Mali', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 30px;
+    color: var(--rose-deep);
+}
+
+.letter-paper p {
+    font-size: 17px;
+    line-height: 2;
+    white-space: pre-line;
+    color: var(--ink-soft);
+}
+
+/* NEW: small photo peeking out of the letter corner */
+.letter-photo {
+    position: absolute;
+    top: -24px;
+    left: 32px;
+    width: 82px;
+    border: 6px solid #fff;
+    border-radius: 8px;
+    transform: rotate(-7deg);
+    box-shadow: 0 12px 24px rgba(217,143,138,.3);
+    z-index: 2;
+}
+
+/* ===== ปุ่มเซอร์ไพรส์ ===== */
+.surprise {
+    text-align: center;
+    padding: 40px 20px 100px;
+}
+
+.surprise button {
+    border: none;
+    padding: 18px 34px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #fff, var(--blush));
+    color: var(--rose-deep);
+    font-family: 'Mali', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .2px;
+    transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
+    box-shadow: 0 12px 28px rgba(217,143,138,.25);
+    border: 1px solid rgba(217,143,138,.2);
+}
+
+.surprise button:hover {
+    transform: scale(1.06) translateY(-2px);
+    box-shadow: 0 16px 34px rgba(217,143,138,.32);
+}
+
+#message {
+    display: none;
+    margin: 32px auto 0;
+    max-width: 600px;
+    font-family: 'Mali', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--rose-deep);
+    animation: fade .9s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 32px;
+    opacity: .55;
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-family: 'Mali', sans-serif;
+    color: var(--ink-soft);
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== NEW: journal / continuous long-form writing (used on page 2+) ===== */
+.journal {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px 25px 90px;
+}
+
+.journal h2 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 34px;
+    color: var(--rose-deep);
+}
+
+.journal-entry {
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px 30px 26px;
+    margin: 24px 0;
+    box-shadow: 0 12px 26px rgba(217,143,138,.16);
+    border: 1px solid rgba(249,220,214,.7);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.journal-entry.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.journal-entry h3 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 600;
+    color: var(--rose-deep);
+    margin-bottom: 14px;
+    font-size: 21px;
+}
+
+/* Just keep adding <p> tags inside a .journal-entry to write as long as you like */
+.journal-entry p {
+    line-height: 1.95;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    font-size: 16.5px;
+}
+
+.journal-entry p:last-child {
+    margin-bottom: 0;
+}
+
+.back-row {
+    text-align: center;
+    padding: 10px 20px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
     }
+}
+
+/* ===== มือถือ ===== */
+@media (max-width: 600px) {
 
     .hero h1 {
-        font-family: 'Mali', cursive, sans-serif;
-        font-size: clamp(65px, 17vw, 120px);
-        font-weight: 700;
-        color: var(--white-card);
-        -webkit-text-stroke: 10px var(--rose);
-        paint-order: stroke fill;
-        line-height: 0.92;
-        transform: rotate(-3deg);
-        margin-bottom: 26px;
-        letter-spacing: 1px;
-        opacity: 0;
-        animation: fadeUp 1s .2s ease both;
-        filter: drop-shadow(0 10px 20px rgba(217,143,138,.28));
+        -webkit-text-stroke: 6px var(--rose);
     }
 
-    .hero h2 {
-        font-family: 'Mali', sans-serif;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 25px;
-        letter-spacing: 1px;
-        margin-bottom: 12px;
-        opacity: 0;
-        animation: fadeUp 1s .3s ease both;
-        color: var(--rose-deep);
-    }
-
-    .hero .names {
-        font-family: 'Mali', sans-serif;
-        font-size: 15px;
-        opacity: 0;
-        letter-spacing: 1px;
-        color: var(--ink-soft);
-        animation: fadeUp 1s .4s ease both;
-    }
-
-    .hero .names::before { content: '✿ '; color: var(--blush-deep); }
-    .hero .names::after { content: ' ✿'; color: var(--blush-deep); }
-
-    .date {
-        opacity: 0;
-        font-size: 14px;
-        margin-top: 6px;
-        color: var(--ink-soft);
-        animation: fadeUp 1s .48s ease both;
-    }
-
-    @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(18px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes floatY {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-6px); }
-    }
-
-    /* ===== ปุ่ม ===== */
-    .button {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 14px 30px;
-        border-radius: 30px;
-        background: linear-gradient(135deg, #fff, var(--blush));
-        color: var(--rose-deep);
-        text-decoration: none;
-        font-weight: 600;
-        font-family: 'Mali', sans-serif;
-        letter-spacing: .3px;
-        transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
-        box-shadow: 0 10px 26px rgba(217,143,138,.25);
-        opacity: 0;
-        animation: fadeUp 1s .56s ease both;
-        border: 1px solid rgba(217,143,138,.25);
-    }
-
-    .button:hover {
-        transform: scale(1.05) translateY(-2px);
-        box-shadow: 0 14px 32px rgba(217,143,138,.35);
-    }
-
-    /* ===== รูป ===== */
-    .photo-section {
-        max-width: 900px;
-        margin: auto;
-        padding: 10px 24px 30px;
-    }
-
-    .photo-frame {
-        position: relative;
-        border-radius: 35px;
-    }
-
-    .photo-frame::before {
-        content: '';
-        position: absolute;
-        inset: -10px;
-        border-radius: 42px;
-        background: linear-gradient(135deg, var(--blush-deep), var(--lavender), var(--peach));
-        opacity: .5;
-        filter: blur(14px);
-        z-index: -1;
-    }
-
-    .main-photo {
-        width: 100%;
-        max-height: 850px;
-        object-fit: cover;
-        border-radius: 35px;
-        border: 12px solid #fff;
-        box-shadow: 0 20px 50px rgba(217,143,138,.3);
-        transform: rotate(1deg);
-        transition: transform .5s ease, box-shadow .5s ease;
-        display: block;
-    }
-
-    .main-photo:hover {
-        transform: rotate(0deg) scale(1.015);
-        box-shadow: 0 26px 58px rgba(217,143,138,.38);
-    }
-
-    /* ===== section divider ===== */
-    .divider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
-        padding-top: 20px;
-        opacity: .8;
-    }
-
-    .divider .line {
-        width: 60px;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, var(--blush-deep), transparent);
-    }
-
-    .divider .heart {
-        font-size: 15px;
-        color: var(--rose);
-        animation: floatY 3s ease-in-out infinite;
-    }
-
-    /* ===== Counter ===== */
-    .counter-section {
-        padding: 70px 20px 90px;
-        text-align: center;
-    }
-
-    .counter-section h2 {
-        font-family: 'Mali', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        margin-bottom: 6px;
-        color: var(--rose-deep);
-        opacity: 0;
-        transform: translateY(16px);
-        transition: opacity .8s ease, transform .8s ease;
-    }
-
-    .counter-section h2.in-view {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .counter-sub {
-        font-family: 'Mali', sans-serif;
-        font-style: italic;
-        font-size: 16px;
-        color: var(--ink-soft);
-        margin-bottom: 36px;
-        opacity: .85;
-    }
-
-    .counter {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
+    .counter-section h2,
+    .timeline h2,
+    .journal h2 {
+        font-size: 27px;
     }
 
     .time-box {
-        min-width: 92px;
-        padding: 20px 12px;
-        background: linear-gradient(160deg, #fff, var(--blush) 120%);
-        color: var(--rose-deep);
-        border-radius: 22px;
-        box-shadow: 0 12px 28px rgba(217,143,138,.22);
-        opacity: 0;
-        transform: translateY(20px) scale(.94);
-        transition: opacity .6s ease, transform .6s ease;
-        border: 1px solid rgba(255,255,255,.6);
-    }
-
-    .time-box.in-view {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+        min-width: 76px;
+        padding: 16px 8px;
     }
 
     .time-box span {
-        display: block;
-        font-family: 'Mali', sans-serif;
-        font-size: 32px;
-        font-weight: 700;
-        font-variant-numeric: tabular-nums;
-    }
-
-    .time-box small {
-        font-size: 12px;
-        letter-spacing: .4px;
-        opacity: .8;
-    }
-
-    .counter-note {
-        margin-top: 26px;
-        opacity: .7;
-        font-size: 14px;
-        color: var(--ink-soft);
-    }
-
-    /* ===== Timeline ===== */
-    .timeline {
-        max-width: 700px;
-        margin: auto;
-        padding: 20px 25px 90px;
-    }
-
-    .timeline h2 {
-        font-family: 'Mali', sans-serif;
-        font-weight: 700;
-        text-align: center;
-        font-size: 32px;
-        margin-bottom: 44px;
-        color: var(--rose-deep);
-    }
-
-    .timeline-track {
-        position: relative;
-        padding-left: 6px;
-    }
-
-    .timeline-track::before {
-        content: '';
-        position: absolute;
-        left: 20px;
-        top: 8px;
-        bottom: 8px;
-        width: 2px;
-        background: linear-gradient(180deg, var(--blush-deep), transparent);
-        opacity: .5;
-    }
-
-    .event {
-        position: relative;
-        padding: 24px 24px 24px 54px;
-        margin: 20px 0;
-        background: #fff;
-        color: var(--ink);
-        border-radius: 24px;
-        box-shadow: 0 12px 26px rgba(217,143,138,.16);
-        transform: rotate(-1deg) translateY(24px);
-        opacity: 0;
-        transition: opacity .7s ease, transform .7s ease;
-        border: 1px solid rgba(249,220,214,.7);
-    }
-
-    .event.in-view {
-        opacity: 1;
-        transform: rotate(-1deg) translateY(0);
-    }
-
-    .event:nth-child(even) {
-        transform: rotate(1deg) translateY(24px);
-    }
-
-    .event:nth-child(even).in-view {
-        transform: rotate(1deg) translateY(0);
-    }
-
-    .event::before {
-        content: '♡';
-        position: absolute;
-        left: 15px;
-        top: 25px;
-        color: var(--rose);
-        font-size: 18px;
-    }
-
-    .event h3 {
-        font-family: 'Mali', sans-serif;
-        font-weight: 600;
-        margin-bottom: 6px;
-        color: var(--rose-deep);
-    }
-
-    .event p {
-        line-height: 1.7;
-        color: var(--ink-soft);
-    }
-
-    /* ===== จดหมาย ===== */
-    .letter {
-        max-width: 750px;
-        margin: auto;
-        padding: 30px 20px 100px;
+        font-size: 25px;
     }
 
     .letter-paper {
-        position: relative;
-        background: #fffdfb;
-        color: var(--ink);
-        padding: 50px 34px;
-        border-radius: 18px;
-        box-shadow: 0 20px 50px rgba(217,143,138,.22);
-        transform: rotate(-1deg);
-        background-image:
-            linear-gradient(#fffdfb 0%, #fffdfb 100%),
-            repeating-linear-gradient(180deg, transparent, transparent 34px, rgba(217,143,138,.06) 35px);
-        border: 1px solid rgba(249,220,214,.8);
+        padding: 38px 24px;
     }
 
-    .letter-paper::after {
-        content: '✿';
-        position: absolute;
-        top: 20px;
-        right: 24px;
-        font-size: 18px;
-        color: var(--blush-deep);
-        opacity: .7;
+    .timeline-track::before {
+        left: 16px;
     }
 
-    .letter-paper h2 {
-        font-family: 'Mali', sans-serif;
-        font-style: italic;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 28px;
-        font-size: 30px;
-        color: var(--rose-deep);
+    .event {
+        padding-left: 46px;
     }
 
-    .letter-paper p {
-        font-size: 17px;
-        line-height: 2;
-        white-space: pre-line;
-        color: var(--ink-soft);
+    .event .event-photo {
+        width: 52px;
+        height: 52px;
     }
+}
 
-    /* ===== ปุ่มเซอร์ไพรส์ ===== */
-    .surprise {
-        text-align: center;
-        padding: 40px 20px 100px;
-    }
-
-    .surprise button {
-        border: none;
-        padding: 18px 34px;
-        border-radius: 40px;
-        background: linear-gradient(135deg, #fff, var(--blush));
-        color: var(--rose-deep);
-        font-family: 'Mali', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        letter-spacing: .2px;
-        transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease;
-        box-shadow: 0 12px 28px rgba(217,143,138,.25);
-        border: 1px solid rgba(217,143,138,.2);
-    }
-
-    .surprise button:hover {
-        transform: scale(1.06) translateY(-2px);
-        box-shadow: 0 16px 34px rgba(217,143,138,.32);
-    }
-
-    #message {
-        display: none;
-        margin: 32px auto 0;
-        max-width: 600px;
-        font-family: 'Mali', sans-serif;
-        font-size: 27px;
-        font-weight: 600;
-        line-height: 1.6;
-        color: var(--rose-deep);
-        animation: fade .9s ease;
-    }
-
-    footer {
-        text-align: center;
-        padding: 32px;
-        opacity: .55;
-        font-size: 13px;
-        letter-spacing: .5px;
-        font-family: 'Mali', sans-serif;
-        color: var(--ink-soft);
-    }
-
-    @keyframes fade {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after {
-            animation-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-        }
-    }
-
-    /* ===== มือถือ ===== */
-    @media (max-width: 600px) {
-
-        .hero h1 {
-            -webkit-text-stroke: 6px var(--rose);
-        }
-
-        .counter-section h2,
-        .timeline h2 {
-            font-size: 27px;
-        }
-
-        .time-box {
-            min-width: 76px;
-            padding: 16px 8px;
-        }
-
-        .time-box span {
-            font-size: 25px;
-        }
-
-        .letter-paper {
-            padding: 38px 24px;
-        }
-
-        .timeline-track::before {
-            left: 16px;
-        }
-
-        .event {
-            padding-left: 46px;
-        }
-    }
 </style>
+
 </head>
 
 
 <body class="is-locked">
+
+<!--
+=====================================================================
+  คู่มือแก้ไขฉบับย่อ (จุดที่สำคัญๆ ที่มักจะต้องเข้ามาแก้บ่อยที่สุด)
+  ค้นหาคำเหล่านี้ในไฟล์ (Ctrl+F) เพื่อกระโดดไปแก้ได้เลย:
+
+  1. "ANSWER ="        → รหัสปลดล็อกหน้าแรก (วัน/เดือน/ปี พ.ศ. ที่ต้องกรอกถูก)
+  2. "startDate ="      → วัน-เวลาเริ่มคบกัน ใช้คำนวณตัวนับเวลาแบบเรียลไทม์
+  3. "<h1>4M</h1>"       → ข้อความหัวเรื่องใหญ่ตรง Hero (ด้านบนสุดของหน้า)
+  4. "photo01.jpg" ฯลฯ  → ชื่อไฟล์รูปทุกจุด (เปลี่ยนแค่ชื่อไฟล์ ไม่ต้องแก้ CSS)
+  5. "monthsData ="      → ข้อมูลเรื่องราวรายเดือนใน Timeline (เพิ่มเดือนใหม่ต่อท้าย array นี้)
+  6. "ถึงต้นน้ำ"          → ส่วนจดหมาย/ข้อความในใจ
+  7. "id=\"message\""    → ข้อความเซอร์ไพรส์ที่โผล่มาตอนกดปุ่ม
+  8. "Made with ♡"       → ชื่อผู้ทำ ท้ายหน้าเว็บ
+=====================================================================
+-->
 
 <!-- LOCK SCREEN -->
 <div id="lock-screen">
@@ -784,18 +1006,26 @@
 <!-- HERO -->
 <section class="hero">
 
+    <!-- จุดรูปที่ 1-2: มุมซ้าย/ขวาของ hero -->
+    <img src="photo-hero-left.jpg" class="corner-photo left" alt="">
+    <img src="photo-hero-right.jpg" class="corner-photo right" alt="">
+
     <div class="crown">♡</div>
 
     <p class="eyebrow">Happy Anniversary</p>
 
-    <h1>3M</h1>
+    <!-- ข้อความหัวเรื่องใหญ่ตัวหนา -->
+    <h1>4M</h1>
 
+    <!-- ข้อความรองใต้หัวเรื่องใหญ่ -->
     <h2>With Tonnam ♡</h2>
 
+    <!-- ชื่อคู่รัก แสดงคั่นด้วย × -->
     <p class="names">
         นาย × ต้นนํ้า
     </p>
 
+    <!-- ช่วงวันที่แสดงผลเฉยๆ (ไม่เกี่ยวกับการคำนวณเวลา ไปแก้ที่ startDate แทน) -->
     <p class="date">
         18 / 05 / 2026 — 18 / 08 / 2026
     </p>
@@ -807,17 +1037,59 @@
 </section>
 
 
-<!-- รูป -->
+<!-- รูปหลัก (จุดรูปที่ 3) -->
 <section class="photo-section">
 
     <div class="photo-frame">
-        <!-- เปลี่ยน couple.jpg เป็นชื่อไฟล์รูปของคุณ -->
+        <!-- เปลี่ยน photo01.jpg เป็นชื่อไฟล์รูปหลักของคุณ -->
         <img
-            src="couple.jpg"
+            src="photo01.jpg"
             class="main-photo"
             alt="Our memories"
         >
     </div>
+
+</section>
+
+<!-- โมเสกรูป กระจายหลายจุด (จุดรูปที่ 4-7) -->
+<section class="photo-mosaic" id="photo-mosaic">
+
+    <figure class="polaroid">
+        <img src="moment01.jpg" alt="">
+        <figcaption>โมเมนต์ที่ 1</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment02.webp" alt="">
+        <figcaption>โมเมนต์ที่ 2</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment03.jpg" alt="">
+        <figcaption>โมเมนต์ที่ 3</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment04.webp" alt="">
+        <figcaption>โมเมนต์ที่ 4</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment05.jpg" alt="">
+        <figcaption>โมเมนต์ที่ 5</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment06.jpg" alt="">
+        <figcaption>โมเมนต์ที่ 6</figcaption>
+    </figure>
+
+    <figure class="polaroid">
+        <img src="moment07.jpg" alt="">
+        <figcaption>โมเมนต์ที่ 7</figcaption>
+    </figure>
+
+    <!-- ต้องการเพิ่มรูปอีก แค่ copy <figure class="polaroid">...</figure> เพิ่มอีกบล็อก แล้วเปลี่ยนเลขไฟล์เป็น photo09.jpg, photo10.jpg, ... -->
 
 </section>
 
@@ -868,50 +1140,39 @@
 
     <div class="timeline-track">
 
+        <!-- กล่องแรกคงที่เสมอ ไม่ถูกเลื่อนเปลี่ยน -->
         <div class="event">
+            <img src="photo-event0.jpg" class="event-photo" alt="">
             <h3>♡ 18 พฤษภาคม 2026 เวลา 12:17 น. ณ โรงอาหาร </h3>
             <p>วันที่เราเริ่มต้นความสัมพันธ์ของเรา</p>
         </div>
 
-        <div class="event">
-            <h3>♡ เดือนที่ 1</h3>
-            <p>เดือนนี้เป็นเดือนแรกที่เราได้รู้จักกันและเริ่มต้นความสัมพันธ์กันอีกทั้งยังมีช่วงที่เราสองคน
-              ได้ลองอะไรเยอะมากๆ ยังจำความรุ้สึกนั้นได้ดี เป้นเดือนที่ดีที่สุด แต่มันผ่านไปแปปเดียว มันเร้วสุดๆ
-               อีกทั้งได้ลองหลายๆอย่าง ถึงตอนนั้นจะมีเรื่องนอยใจกันยับแต่ก้ผ่านกันมาด้ายยยยยย</p>
-        </div>
-
-        <div class="event">
-            <h3>♡ เดือนที่ 2</h3>
-            <p>เดือนนี้เป็นเดือนที่ 2 ของความสัมพันธ์ของเรา ซึ่งมีความทรงจำที่ดีมากมาย ทั้งยังได้เรียนรู้และเข้าใจกันมากขึ้น 
-              เดือนนี้เริ่มคุยกันแร้ววว ปรบมืออ  ชอบมากก เดือนนี้เป้นเดือนที่แบบ รวมทุกสรรพสิ่ง ของครั้งแรกเราไว้เกือบหมดด 
-              ฟินค่ะ ติด ติดจุบแล้วมารับผิดชอบด้วยนะคะ 5465764656756 เดือนนี้ฟินสุดๆแระะ (FS)</p>
-        </div>
-
-        <div class="event">
-            <h3>♡ เดือนที่ 3</h3>
-            <p>เดือนนี้เป้้นเดือนที่หนุปกป้องพี่เลยนะคะ ชอบค่ะ เดือนนี้เป้นเดือนที่เราเปิดใจกันมากๆ แถมเปิดอย่างอื่นด้วยนะคะ
-              5465461276127615 แถมเป้นเดือนทีเราเล่นเกมกันอีกนะคะ ชอบมากค่ะ เดือนนี้เป้นเดือนที่เราสองคนได้เรียนรู้และเข้าใจกันมาก
-              เดือนนี้แถมสนิทแบบแทบจะไม่มีความลับกันแล้วนะคะเอาจริงๆ แถมมีความแบบว่า หลงรักแบบโดนเสน่ห์หรือต้นนํ้าแอบทำเสน่ห์ใส่พี่
-            </p>
-        </div>
+        <!-- 3 กล่องนี้ถูกควบคุมด้วย JS: กด "เดือนถัดไป" แล้วเนื้อหาจะเลื่อนมาแทนที่เรื่อยๆ (1-3 → 4-6 → 7-9 → ...) -->
+        <div class="event" id="month-slot-0"></div>
+        <div class="event" id="month-slot-1"></div>
+        <div class="event" id="month-slot-2"></div>
 
     </div>
 
-</section>
+    <div class="continue-block" id="month-nav">
+        <button type="button" class="button static" id="prev-months-btn" style="border:none;cursor:pointer;visibility:hidden;">← เดือนก่อนหน้า</button>
+        <button type="button" class="button static" id="next-months-btn" style="border:none;cursor:pointer;">เดือนถัดไป →</button>
+    </div>
 
+</section>
 
 <!-- ความในใจ -->
 <section class="letter">
 
     <div class="letter-paper">
 
+        <!-- จุดรูปที่ 8: มุมจดหมาย -->
+        <img src="photo-letter.jpg" class="letter-photo" alt="">
+
         <h2>ถึงต้นน้ำ ♡</h2>
 
-        <p>ต้นน้ำคือคนที่ทำให้พี่มีความสุขที่สุดในโลกเลยนะคะ ถึงแม้จะมีเรื่องที่ทำให้เราทะเลาะกันบ้าง แต่พี่ก็ยังรักต้นน้ำเหมือนเดิมนะคะ ต้นน้ำคือคนที่ทำให้
-          พี่รู้สึกดีทุกครั้งที่อยู่ด้วยกัน และพี่ก็อยากให้ต้นน้ำรู้ว่าพี่จะอยู่ข้างต้นน้ำเสมอ ไม่ว่าจะเกิดอะไรขึ้นก็ตาม พี่รักต้นน้ำมากๆ นะคะ 
-          และหวังว่าเราจะอยู่ด้วยกันไปนานๆ เลยนะคะ รักต้นน้ำมากๆ นะคะ ♡ LOVE YOU SO MUCH</p>
-</p>
-        </p>
+        <!-- เขียนจดหมาย/ข้อความในใจตรงนี้ ยาวแค่ไหนก็ได้ ขึ้นบรรทัดใหม่ได้ปกติ -->
+        <p></p>
 
     </div>
 
@@ -926,15 +1187,15 @@
     </button>
 
     <div id="message">
-        Happy 3 Months ❤️<br>
-        ขอบคุณที่อยู่ด้วยกันมาตลอด 3 เดือนนะคะ ต้นน้ำคือคนที่ทำให้พี่มีความสุขที่สุดในโลกเลยนะคะ 
-        ถึงแม้จะมีเรื่องที่ทำให้เรานอยกันบ้าง แต่พี่ก็ยังรักต้นน้ำเหมือนเดิมนะคะ
+        Happy 4 Months ❤️<br>
+        <!-- เขียนข้อความเซอร์ไพรส์เพิ่มเติมต่อจากบรรทัดนี้ได้ (ใช้ <br> ขึ้นบรรทัดใหม่) -->
     </div>
 
 </section>
 
 
 <footer>
+    <!-- แก้ชื่อผู้ทำตรงนี้ -->
     Made with ♡ by นาย
 </footer>
 
@@ -948,7 +1209,9 @@
    คำตอบ: 18 / 05 / 69  (18 พฤษภาคม 2569)
    ========================================= */
 
-const ANSWER = { day: 18, month: 5, year: 69 }; // เปลี่ยนตัวเลขตรงนี้เป็นวัน/เดือน/ปี (พ.ศ.) ของคุณ
+const ANSWER = { day: 18, month: 5, year: 69 };
+// ↑ รหัสปลดล็อกหน้าแรก: ผู้ใช้ต้องกรอก วัน/เดือน/ปี(พ.ศ. 2 หลัก) ให้ตรงกับตรงนี้ถึงจะเข้าเว็บได้
+//   เช่นอยากให้รหัสเป็นวันที่ 1 มกราคม 2569 ก็ใส่ { day: 1, month: 1, year: 69 }
 
 const dayInput = document.getElementById("field-day");
 const monthInput = document.getElementById("field-month");
@@ -1022,9 +1285,11 @@ try {
 /* =========================================
    REAL-TIME LOVE COUNTER
    วันที่เริ่มคบ: 18 พฤษภาคม 2026 เวลา 12:17
+   (ตัวนับ วัน/ชั่วโมง/นาที/วินาที ด้านบนคำนวณจากตัวแปร startDate ด้านล่างนี้เท่านั้น
+    ถ้าจะแก้วันเริ่มคบ ให้แก้ตรงนี้ที่เดียว ไม่ต้องไปแก้ที่อื่น)
    ========================================= */
 
-const startDate = new Date("2026-05-18T12:17:00");
+const startDate = new Date("2026-05-18T12:17:00"); // รูปแบบ: "YYYY-MM-DDTHH:mm:ss"
 
 function updateCounter() {
 
@@ -1063,11 +1328,93 @@ function showMessage() {
 
 
 /* =========================================
+   MONTHS TIMELINE — เลื่อนแทนที่ทีละ 3 เดือน
+   เพิ่มเดือนใหม่ได้เรื่อยๆ แค่เติมลงท้าย array นี้
+   ========================================= */
+
+const monthsData = [
+    { title: "♡ เดือนที่ 1", text: "เดือนนี้เป็นเดือนแรกที่เราได้รู้จักกันและเริ่มต้นความสัมพันธ์กันอีกทั้งยังมีช่วงที่เราสองคนได้ลองอะไรเยอะมากๆ ยังจำความรุ้สึกนั้นได้ดี เป้นเดือนที่ดีที่สุด แต่มันผ่านไปแปปเดียว มันเร้วสุดๆ อีกทั้งได้ลองหลายๆอย่าง ถึงตอนนั้นจะมีเรื่องนอยใจกันยับแต่ก้ผ่านกันมาด้ายยยยยย",
+     photo: "Photo01" },
+    { title: "♡ เดือนที่ 2", text: "เดือนนี้เป็นเดือนที่ 2 ของความสัมพันธ์ของเรา ซึ่งมีความทรงจำที่ดีมากมาย ทั้งยังได้เรียนรู้และเข้าใจกันมากขึ้น   เดือนนี้เริ่มคุยกันแร้ววว ปรบมืออ  ชอบมากก เดือนนี้เป้นเดือนที่แบบ รวมทุกสรรพสิ่ง ของครั้งแรกเราไว้เกือบหมดด ฟินค่ะ ติด ติดจุบแล้วมารับผิดชอบด้วยนะคะ 5465764656756 เดือนนี้ฟินสุดๆแระะ (FS)",
+     photo: "Photo02" },
+    { title: "♡ เดือนที่ 3", text: "เดือนนี้เป้้นเดือนที่หนุปกป้องพี่เลยนะคะ ชอบค่ะ เดือนนี้เป้นเดือนที่เราเปิดใจกันมากๆ แถมเปิดอย่างอื่นด้วยนะคะ 5465461276127615 แถมเป้นเดือนทีเราเล่นเกมกันอีกนะคะ ชอบมากค่ะ เดือนนี้เป้นเดือนที่เราสองคนได้เรียนรู้และเข้าใจกันมาก เดือนนี้แถมสนิทแบบแทบจะไม่มีความลับกันแล้วนะคะเอาจริงๆ แถมมีความแบบว่า หลงรักแบบโดนเสน่ห์หรือต้นนํ้าแอบทำเสน่ห์ใส่พี่",
+     photo: "Photo03" },
+    { title: "♡ เดือนที่ 4", text: "เดือนนี้เป็นเดือนที่เรามีความสุขกันมากก เที่ยวกันบ่อยสุดๆ ผ่านความเข้าใจ ความรุ้สึกดีๆ ความสนุกสนาน ความฟิน ความตื่นเต้น ความหวาน ความน่ารัก ความอบอุ่น ความประทับใจ ความทรงจำดีๆ และความรักที่มีให้กันและกันมากขึ้นอีกด้วยนะคะ เดือนนี้เป้นเดือนที่ต้นนํ้าพูดมาก ชอบค่ะ อยุ่ด้วยกันไปนานๆนะคะ",
+     photo: "Photo04" },
+    // เพิ่มเดือนที่ 7, 8, 9, ... ได้ที่นี่ ไปเรื่อยๆ ไม่มีที่สิ้นสุด:
+    // { title: "♡ เดือนที่ 7", text: "...", photo: "photo-event7.jpg" },
+];
+
+const MONTHS_PER_PAGE = 3;
+const totalMonthPages = Math.max(1, Math.ceil(monthsData.length / MONTHS_PER_PAGE));
+let monthPage = 0;
+
+const monthSlots = [
+    document.getElementById("month-slot-0"),
+    document.getElementById("month-slot-1"),
+    document.getElementById("month-slot-2"),
+];
+const prevMonthsBtn = document.getElementById("prev-months-btn");
+const nextMonthsBtn = document.getElementById("next-months-btn");
+
+function renderMonthSlot(slotEl, data) {
+    if (!data) {
+        slotEl.style.display = "none";
+        slotEl.innerHTML = "";
+        return;
+    }
+    slotEl.style.display = "";
+    slotEl.innerHTML =
+        '<img src="' + data.photo + '" class="event-photo" alt="">' +
+        "<h3>" + data.title + "</h3>" +
+        "<p>" + data.text + "</p>";
+}
+
+function renderMonthPage(page) {
+    monthSlots.forEach((slotEl) => slotEl.classList.add("fading"));
+
+    setTimeout(() => {
+        for (let i = 0; i < MONTHS_PER_PAGE; i++) {
+            renderMonthSlot(monthSlots[i], monthsData[page * MONTHS_PER_PAGE + i]);
+        }
+        monthSlots.forEach((slotEl) => {
+            slotEl.classList.remove("fading");
+            slotEl.classList.add("in-view");
+        });
+
+        prevMonthsBtn.style.visibility = page === 0 ? "hidden" : "visible";
+        nextMonthsBtn.disabled = page >= totalMonthPages - 1;
+
+        const nextStart = (page + 1) * MONTHS_PER_PAGE + 1;
+        nextMonthsBtn.textContent = page >= totalMonthPages - 1
+            ? "เดือนถัดไป →"
+            : "เดือนที่ " + nextStart + " →";
+    }, 200);
+}
+
+prevMonthsBtn.addEventListener("click", () => {
+    if (monthPage > 0) {
+        monthPage--;
+        renderMonthPage(monthPage);
+    }
+});
+
+nextMonthsBtn.addEventListener("click", () => {
+    if (monthPage < totalMonthPages - 1) {
+        monthPage++;
+        renderMonthPage(monthPage);
+    }
+});
+
+renderMonthPage(monthPage);
+
+
+/* =========================================
    SCROLL REVEAL
    ========================================= */
 
 const revealTargets = document.querySelectorAll(
-    ".counter-section h2, .time-box, .event"
+    ".counter-section h2, .time-box, .event, .polaroid"
 );
 
 const observer = new IntersectionObserver((entries) => {
